@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:id="@+id/act_ch3main_info_tv"
+    android:layout_marginLeft="50dp"
+    android:layout_width="100dp"
+    android:layout_height="100dp"
+    android:minWidth="200dp"
+    android:background="@android:color/holo_green_dark"
+    android:text="width=100,minWidth=200,marginLeft=50dp"
+    xmlns:android="http://schemas.android.com/apk/res/android" />
+

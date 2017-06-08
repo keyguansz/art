@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+        <k.art.ch3View.KCircleView
+            android:id="@+id/act_ch4main_kv"
+            android:layout_width="wrap_content"
+            android:padding="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_height="wrap_content"
+            app:k_color="#f0f033"
+            android:background="@android:color/holo_green_dark"/>
+
+</LinearLayout>
