@@ -9,7 +9,7 @@ android {
     compileSdkVersion 24
     buildToolsVersion "24.0.3"
     defaultConfig {
-        applicationId "k.art.rv"
+        applicationId "k.art"
         minSdkVersion 17
         targetSdkVersion 24
         versionCode 2
@@ -21,11 +21,11 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
         debug {
-             //同时在一台设备安装debug和release版apk。
-             applicationIdSuffix ".debug"
+            //同时在一台设备安装debug和release版apk。
+            applicationIdSuffix ".debug"
         }
         //只针对release版本进行配置
-      /*  applicationVariants.all {
+        /*  applicationVariants.all {
             variant ->
                 variant.outputs.each {
                     output ->
@@ -44,4 +44,5 @@ android {
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     compile 'com.android.support:appcompat-v7:24.2.1'
+    compile 'com.android.support.constraint:constraint-layout:1.0.0-alpha9'
 }
