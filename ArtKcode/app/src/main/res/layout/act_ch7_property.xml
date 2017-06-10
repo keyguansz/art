@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/ch7_property_o_tv"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@android:color/holo_red_light" />
+
+    <TextView
+        android:id="@+id/ch7_property_v_tv"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_margin="20dp"
+        android:background="@android:color/holo_green_light" />
+
+    <TextView
+        android:id="@+id/ch7_property_s_tv"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_margin="20dp"
+        android:background="@android:color/holo_blue_bright" />
+    <Button
+        android:id="@+id/ch7_property_s_btn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_margin="20dp"
+        android:text="width anim wraper"
+        android:background="@android:color/holo_blue_bright" />
+
+    <Button
+        android:id="@+id/ch7_property_lis_btn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_margin="20dp"
+        android:text="width anim lis"
+        android:background="@android:color/holo_blue_bright" />
+
+</LinearLayout>

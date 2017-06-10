@@ -32,6 +32,12 @@ public class Ch7MainActivity extends Activity {
                 overridePendingTransition(R.anim.ch7_animation_enter,R.anim.ch7_animation_back);
             }
         });
+        findViewById(R.id.ch7_property).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(Ch7MainActivity.this, Ch7PropertyActivity.class));
+            }
+        });
     }
 
 }

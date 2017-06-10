@@ -19,9 +19,9 @@
             </intent-filter>
         </activity>
         <activity android:name=".ch7Anim.Ch7ViewAnimActivity" />
-        <activity android:name=".ch6Drawable.Ch6MainActivity"></activity>
-        <activity android:name=".ch5Remote.Ch5AActivity"></activity>
-        <activity android:name=".ch5Remote.Ch5BActivity"></activity>
+        <activity android:name=".ch6Drawable.Ch6MainActivity" />
+        <activity android:name=".ch5Remote.Ch5AActivity" />
+        <activity android:name=".ch5Remote.Ch5BActivity" />
         <activity android:name=".ch4View.Ch4MainActivity" />
 
         <receiver android:name=".ch5Remote.KAppWidgetImpl">
@@ -35,7 +35,8 @@
             </intent-filter>
         </receiver>
 
-        <activity android:name=".ch7Anim.Ch7ActAnimActivity"></activity>
+        <activity android:name=".ch7Anim.Ch7ActAnimActivity" />
+        <activity android:name=".ch7Anim.Ch7PropertyActivity"></activity>
     </application>
 
 </manifest>

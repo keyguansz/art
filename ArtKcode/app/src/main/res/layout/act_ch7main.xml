@@ -22,5 +22,13 @@
         android:background="@drawable/transition_demo"
         android:text="Activity动画"
         />
+    <TextView
+        android:id="@+id/ch7_property"
+        android:layout_margin="10dp"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/transition_demo"
+        android:text="property 动画"
+        />
 
 </LinearLayout>
