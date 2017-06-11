@@ -94,8 +94,6 @@ public class Ch7PropertyActivity extends Activity {
         ObjectAnimator.ofInt(new AnimViewWraper(mBtn),"width",300).setDuration(10*1000).start();
         final Button btn = (Button) findViewById(R.id.ch7_property_lis_btn);
         performAnimator(btn,0,500);
-        PropertyValuesHolder.
-;
     }
     private void performAnimator(final View target, final int start, final int end) {
         ValueAnimator valueAnimator = ValueAnimator.ofInt(1, 100);

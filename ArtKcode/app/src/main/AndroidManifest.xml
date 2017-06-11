@@ -3,6 +3,7 @@
     package="k.art">
 
     <permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
 
     <application
         android:name=".KApplication"
@@ -11,13 +12,13 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ch7Anim.Ch7MainActivity">
+        <activity android:name=".ch8W.Ch8MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".ch7Anim.Ch7MainActivity"></activity>
         <activity android:name=".ch7Anim.Ch7ViewAnimActivity" />
         <activity android:name=".ch6Drawable.Ch6MainActivity" />
         <activity android:name=".ch5Remote.Ch5AActivity" />
