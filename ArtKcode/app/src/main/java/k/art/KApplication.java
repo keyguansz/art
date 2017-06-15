@@ -4,6 +4,8 @@ package k.art;
 import android.app.Application;
 import android.content.res.Configuration;
 
+import k.core.util.kil.KImgLoader;
+
 /**
  * Created by key on 2017/4/16.
  */
@@ -21,6 +23,7 @@ public class KApplication extends Application {
     public void onCreate() {
         super.onCreate();
         ins = this;
+        KImgLoader.getIns().init(this);
        // KDimenUtil.main();
     }
 
