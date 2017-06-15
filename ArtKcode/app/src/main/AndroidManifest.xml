@@ -12,13 +12,18 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ch8W.Ch8MainActivity">
+        <activity android:name=".ch11Th.Ch11MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ch7Anim.Ch7MainActivity"></activity>
+        <service android:name=".ch11Th.KIntentService"/>
+        <activity android:name=".ch10Msg.Ch10MainActivity"/>
+        <activity android:name=".ch8W.Ch8MainActivity"/>
+        <activity android:name=".ch7Anim.Ch7ActAnimActivity" />
+        <activity android:name=".ch7Anim.Ch7PropertyActivity"/>
+        <activity android:name=".ch7Anim.Ch7MainActivity"/>
         <activity android:name=".ch7Anim.Ch7ViewAnimActivity" />
         <activity android:name=".ch6Drawable.Ch6MainActivity" />
         <activity android:name=".ch5Remote.Ch5AActivity" />
@@ -35,9 +40,6 @@
                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
             </intent-filter>
         </receiver>
-
-        <activity android:name=".ch7Anim.Ch7ActAnimActivity" />
-        <activity android:name=".ch7Anim.Ch7PropertyActivity"></activity>
     </application>
 
 </manifest>

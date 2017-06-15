@@ -1,6 +1,11 @@
 package k.core.util;
 
+import android.os.Handler;
+import android.os.Looper;
 import android.util.Log;
+import android.widget.Toast;
+
+import k.art.KApplication;
 
 public class KLogUtil {
     private static final String TAG = "ART";
@@ -24,5 +29,15 @@ public class KLogUtil {
     }
     public static void E(String clsName, String log) {
         E(clsName + "->" + log);
+    }
+    public static void T(final String log) {
+        Handler handler = new Handler(Looper.getMainLooper());//fix:Can't create handler inside thread that has not called Looper.prepare()
+        handler.post(new Runnable() {
+            @Override
+            public void run() {
+                Toast.makeText(KApplication.getIns(),log,Toast.LENGTH_LONG).show();
+            }
+        });
+        Log.e(TAG, log);
     }
 }
