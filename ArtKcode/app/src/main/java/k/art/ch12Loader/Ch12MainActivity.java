@@ -8,7 +8,7 @@ import k.art.R;
 
 
 public class Ch12MainActivity extends Activity {
-    private final String TAG = "Ch12MainActivity";
+    private final String TAG = "Ch13MainActivity";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
