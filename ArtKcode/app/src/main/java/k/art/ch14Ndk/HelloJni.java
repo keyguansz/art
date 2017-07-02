@@ -5,7 +5,7 @@ package k.art.ch14Ndk;
  */
 
 public class HelloJni {
-   /* static {
+    static {
         System.loadLibrary("HelloJni");
     }
     public native String get();
@@ -15,5 +15,5 @@ public class HelloJni {
         HelloJni jniTest = new HelloJni();
         System.out.println(jniTest.get());
         jniTest.set("java set");
-    }*/
+    }
 }

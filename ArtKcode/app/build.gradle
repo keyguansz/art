@@ -7,14 +7,25 @@ def buildTime() {
 
 android {
     compileSdkVersion 24
-    buildToolsVersion "24.0.3"
+    buildToolsVersion '25.0.0'
     defaultConfig {
         applicationId "k.art"
         minSdkVersion 17
         targetSdkVersion 24
         versionCode 2
         versionName "0.0.5.24"
+        ndk {
+            moduleName "HelloJni"
+            ldLibs "log", "z", "m"
+           // abiFilters "armeabi", "armeabi-v7a", "x86"
+            abiFilters "armeabi-v7a"
+        }
     }
+    /*externalNativeBuild {
+        ndkBuild {
+            pathfile "src\\main\\jni\\Android.mk"
+        }
+    }*/
     buildTypes {
         release {
             minifyEnabled false
