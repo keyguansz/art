@@ -76,6 +76,16 @@ public class KTextUtil
         }
         return mYmdFormat.format(date);
     }
+    public static long KB = 1024L;//1024*1024;
+    public static long MB = 1048576L;//1024*1024;
+    public static long GB = 1073741824L;//1024*1024*1024;
+    /*格式化自适应文件大小*/
+    public static String formatASize(long oldValue){
+        if(oldValue <  MB){
+            return ""+oldValue/ KB+"KB";
+        }
+        return ""+oldValue/ MB+"MB";
+    }
 ////////////////////////////////////////////////
     public static byte getUnsignedBytes(short data) {
         return (byte) (data & 0xff);
