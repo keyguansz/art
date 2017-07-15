@@ -342,31 +342,33 @@ public class KTextUtil
     }
 
     public static String byte2hex(byte[] buffer) {
-        String h = "";
+        StringBuilder h = new StringBuilder(20);
 
         for (int i = 0; i < buffer.length; i++) {
             String temp = Integer.toHexString(buffer[i] & 0xFF);
+            h.append(" " );
             if (temp.length() == 1) {
-                temp = "0" + temp;
+                h.append("0");
             }
-            h = h + " " + temp;
+            h.append(temp);
         }
 
-        return h;
+        return h.toString();
     }
 
     public static String byte2hex(byte[] buffer, int start, int length) {
-        String h = "";
+        StringBuilder h = new StringBuilder(20);
 
         for (int i = start; i < start+length; i++) {
             String temp = Integer.toHexString(buffer[i] & 0xFF);
+            h.append(" " );
             if (temp.length() == 1) {
-                temp = "0" + temp;
+                h.append("0");
             }
-            h = h + " " + temp;
+            h.append(temp);
         }
 
-        return h;
+        return h.toString();
     }
 
     public static String byte2hex(byte[] buffer, String sep) {
