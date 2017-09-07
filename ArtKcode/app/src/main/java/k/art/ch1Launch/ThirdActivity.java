@@ -1,4 +1,4 @@
-package k.art.ch1lifecycle;
+package k.art.ch1Launch;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -9,20 +9,20 @@ import android.view.View.OnClickListener;
 
 import k.art.R;
 
-public class SecondActivity extends Activity {
-    private static final String TAG = "SecondActivity";
+public class ThirdActivity extends Activity {
+    private static final String TAG = "ThirdActivity";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         // TODO Auto-generated method stub
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_second);
+        setContentView(R.layout.activity_third);
         findViewById(R.id.button1).setOnClickListener(new OnClickListener() {
 
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent();
-                intent.setClass(SecondActivity.this, ThirdActivity.class);
+                intent.setClass(ThirdActivity.this, Ch1MainActivity.class);
                 intent.putExtra("time", System.currentTimeMillis());
                 startActivity(intent);
             }

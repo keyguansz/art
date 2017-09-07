@@ -1,7 +1,5 @@
-package k.art.ch1lifecycle;
+package k.art.ch1Launch;
 
-import android.app.Activity;
-import android.app.ActivityManager;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -11,39 +9,37 @@ import android.widget.Button;
 import k.art.R;
 
 
-public class LaunchDemoStandardActivity extends AppCompatActivity {
+public class LaunchModeActivity extends AppCompatActivity {
     private static int mOnCreateCnt = 0;
     private static int mOnNewIntentCnt = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_lauch_demo_standard);
+        setContentView(R.layout.activity_launch_mode);
         mOnCreateCnt++;
-        ((Button)findViewById(R.id.ok_btn)).setText("mOnCreateCnt="+mOnCreateCnt);
-        findViewById(R.id.ok_btn).setOnClickListener(new View.OnClickListener() {
+        ((Button)findViewById(R.id.standard_btn)).setText("standard:mOnCreateCnt="+mOnCreateCnt);
+        findViewById(R.id.standard_btn).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(LaunchDemoStandardActivity.this,LaunchDemoStandardActivity.class);
-
+                Intent intent = new Intent(LaunchModeActivity.this,LaunchModeActivity.class);
                 startActivity(intent);
             }
         });
-        ((Button)findViewById(R.id.single_top_btn)).setText("mOnNewIntentCnt="+mOnNewIntentCnt
+        ((Button)findViewById(R.id.single_top_btn)).setText("single_top:mOnNewIntentCnt="+mOnNewIntentCnt
                 +"taskId="+getTaskId());
         findViewById(R.id.single_top_btn).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(LaunchDemoStandardActivity.this,LaunchDemoStandardActivity.class);
+                Intent intent = new Intent(LaunchModeActivity.this,LaunchModeActivity.class);
                 intent.setFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);
                 startActivity(intent);
             }
         });
-        findViewById(R.id.new_main_btn).setOnClickListener(new View.OnClickListener() {
+        findViewById(R.id.start_other_btn).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(LaunchDemoStandardActivity.this,MainActivity.class);
-
+                Intent intent = new Intent(LaunchModeActivity.this,Ch1MainActivity.class);
                 startActivity(intent);
             }
         });

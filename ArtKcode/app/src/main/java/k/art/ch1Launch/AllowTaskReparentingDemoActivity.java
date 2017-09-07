@@ -1,4 +1,4 @@
-package k.art.ch1lifecycle;
+package k.art.ch1Launch;
 
 import android.content.Intent;
 import android.net.Uri;

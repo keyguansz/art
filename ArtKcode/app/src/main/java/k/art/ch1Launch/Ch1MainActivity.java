@@ -1,4 +1,4 @@
-package k.art.ch1lifecycle;
+package k.art.ch1Launch;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -14,7 +14,7 @@ import android.view.View.OnClickListener;
 import k.art.R;
 import k.core.util.KLogUtil;
 
-public class MainActivity extends Activity {
+public class Ch1MainActivity extends Activity {
 
     private static final String TAG = "MainActivity";
 
@@ -41,10 +41,13 @@ public class MainActivity extends Activity {
         findViewById(R.id.launch_demo_btn).setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, LaunchDemoStandardActivity.class);
-                //intent.setFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);
-                //intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                Intent intent = new Intent(Ch1MainActivity.this, LaunchModeActivity.class);
+               // intent.setFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);//AB+Apush->ABA
+                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);//AB+Apush-->A
                 //
+                ActivityStack
+                ActivityStack;
+                        ActivityStackSupervisor;
                 startActivity(intent);
             }
         });
@@ -52,7 +55,7 @@ public class MainActivity extends Activity {
         findViewById(R.id.allow_task_reparenting_btn).setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, AllowTaskReparentingDemoActivity.class);
+                Intent intent = new Intent(Ch1MainActivity.this, AllowTaskReparentingDemoActivity.class);
                 //intent.setFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);
                 //intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                 //
