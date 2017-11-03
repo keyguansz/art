@@ -7,13 +7,7 @@ import android.os.SystemClock;
 import android.support.annotation.Nullable;
 import android.util.Log;
 
-/**
- * @author :key.guan
- * @package :k.art.ch11Th
- * @date : 2017/6/15
- * Description:
- * Copyright (c) 2017. DJI All Rights Reserved.
- */
+
 
 public class KIntentService extends IntentService {
     private static final String TAG = KIntentService.class.getSimpleName();

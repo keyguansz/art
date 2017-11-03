@@ -11,13 +11,8 @@ import k.core.util.KLogUtil;
 
 import static android.content.ContentValues.TAG;
 
-/**
- * @author :key.guan
- * @package :k.core.util
- * @date : 2017/6/15
- * Description:
- * Copyright (c) 2017. DJI All Rights Reserved.
- */
+
+
 
 public class KImgResizer {
     public static void main(){
