@@ -5,13 +5,7 @@ import android.support.annotation.Nullable;
 import android.util.AttributeSet;
 import android.widget.ImageView;
 
-/**
- * @author :key.guan
- * @package :k.widget
- * @date : 2017/6/15
- * Description:
- * Copyright (c) 2017. DJI All Rights Reserved.
- */
+
 
 public class KSquareImageView extends ImageView {
 

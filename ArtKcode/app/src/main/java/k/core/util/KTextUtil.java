@@ -1,12 +1,4 @@
-/**
- * @file_name    : DJITextUtil.java
- * @package_name : com.util
- * @Data         : 2013-10-25 下午4:44:16
- * @author       : zhangliutao
- * @Description  : TODO
- *
- * Copyright (c) 2013, DJI All Rights Reserved.
- */
+
 
 package k.core.util;
 
@@ -109,7 +101,6 @@ public class KTextUtil
         }
         return ""+oldValue/ MB+"MB";
     }
-////////////////////////////////////////////////
     public static byte getUnsignedBytes(short data) {
         return (byte) (data & 0xff);
     }
