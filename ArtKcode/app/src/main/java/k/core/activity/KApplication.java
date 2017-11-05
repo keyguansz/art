@@ -1,4 +1,4 @@
-package k.opt;
+package k.core.activity;
 
 
 import android.content.Context;
@@ -9,9 +9,8 @@ import com.squareup.leakcanary.AndroidExcludedRefs;
 import com.squareup.leakcanary.LeakCanary;
 import com.squareup.leakcanary.RefWatcher;
 
-import k.opt.monitor.memory.LeakCanaryService;
-import k.opt.monitor.time.TimeMonitorConfig;
-import k.opt.monitor.time.TimeMonitorManager;
+import k.core.monitor.memory.LeakCanaryService;
+
 
 /**
  * Created by yuchengluo on 2015/6/25.
@@ -46,11 +45,10 @@ public class KApplication extends MultiDexApplication {
     @Override
     public void onCreate() {
         super.onCreate();
-
         mRefWatcher  = LeakCanary.install(this, LeakCanaryService.class, AndroidExcludedRefs.createAppDefaults().build());
         InitModule();
-        TimeMonitorManager.getInstance().getTimeMonitor(TimeMonitorConfig.TIME_MONITOR_ID_APPLICATION_START)
-                .recodingTimeTag("ApplicationCreate");
+     /*   TimeMonitorManager.getInstance().getTimeMonitor(TimeMonitorConfig.TIME_MONITOR_ID_APPLICATION_START)
+                .recodingTimeTag("ApplicationCreate");*/
     }
 
     @Override

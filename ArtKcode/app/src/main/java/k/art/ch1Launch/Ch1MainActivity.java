@@ -45,9 +45,7 @@ public class Ch1MainActivity extends Activity {
                // intent.setFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);//AB+Apush->ABA
                 intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);//AB+Apush-->A
                 //
-                ActivityStack
-                ActivityStack;
-                        ActivityStackSupervisor;
+
                 startActivity(intent);
             }
         });

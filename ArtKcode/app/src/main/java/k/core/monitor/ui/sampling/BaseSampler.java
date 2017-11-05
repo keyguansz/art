@@ -1,4 +1,4 @@
-package k.opt.monitor.ui.sampling;
+package k.core.monitor.ui.sampling;
 
 import android.os.Handler;
 import android.os.HandlerThread;

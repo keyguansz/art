@@ -1,4 +1,4 @@
-package k.opt.monitor.ui;
+package k.core.monitor.ui;
 
 import android.os.Handler;
 import android.os.HandlerThread;

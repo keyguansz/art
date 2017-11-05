@@ -1,4 +1,4 @@
-package k.opt.monitor.time;
+package k.core.monitor.time;
 
 
 import java.util.HashMap;
@@ -39,7 +39,7 @@ public class TimeMonitor {
         KLogUtil.D(TAG, tag + ":" + time + "ms");
         mTimeTag.put(tag, time);
     }
-    public void end(String tag,boolean writeLog){
+    public void end(String tag, boolean writeLog){
         recodingTimeTag(tag);
         end(writeLog);
     }

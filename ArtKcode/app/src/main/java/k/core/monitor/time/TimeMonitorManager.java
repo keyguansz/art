@@ -1,10 +1,8 @@
-package k.opt.monitor.time;
+package k.core.monitor.time;
 
 import android.content.Context;
 
 import java.util.HashMap;
-
-import k.opt.monitor.time.TimeMonitor;
 
 /**
  * Created by yuchengluo on 2016/3/25.

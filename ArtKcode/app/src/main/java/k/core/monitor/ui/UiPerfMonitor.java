@@ -1,14 +1,13 @@
-package k.opt.monitor.ui;
+package k.core.monitor.ui;
 
 import android.os.Looper;
 
-
-
 import java.io.File;
 
+import k.core.monitor.ui.sampling.CpuInfo;
+import k.core.monitor.ui.sampling.CpuInfoSampler;
 import k.core.util.KLogUtil;
-import k.opt.monitor.ui.sampling.CpuInfo;
-import k.opt.monitor.ui.sampling.CpuInfoSampler;
+
 
 /**
  * Created by yuchengluo on 2016/3/31.

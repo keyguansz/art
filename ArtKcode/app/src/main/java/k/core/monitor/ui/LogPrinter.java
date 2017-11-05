@@ -1,7 +1,6 @@
-package k.opt.monitor.ui;
+package k.core.monitor.ui;
 
 import android.util.Printer;
-
 
 import k.core.util.KLogUtil;
 
@@ -33,7 +32,7 @@ public class LogPrinter implements Printer, UiPerfMonitorConfig {
         }
     }
 
-    private void execuTime(String loginfo, long starttime,long endtime) {
+    private void execuTime(String loginfo, long starttime, long endtime) {
         int level = 0;
         long time = endtime - starttime;
        KLogUtil.D(TAG, "dispatch handler time : " + time);

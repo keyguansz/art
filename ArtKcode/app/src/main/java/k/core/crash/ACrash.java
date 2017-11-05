@@ -5,4 +5,7 @@ package k.core.crash;
  */
 
 public abstract class ACrash {
+    protected abstract void onNo();
+    protected abstract void onYes();
+
 }

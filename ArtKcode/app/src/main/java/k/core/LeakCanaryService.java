@@ -1,4 +1,4 @@
-package k.opt.monitor.memory;
+package k.core;
 
 import com.squareup.leakcanary.AnalysisResult;
 import com.squareup.leakcanary.DisplayLeakService;

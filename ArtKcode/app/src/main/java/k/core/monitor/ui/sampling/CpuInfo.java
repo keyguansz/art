@@ -1,4 +1,4 @@
-package k.opt.monitor.ui.sampling;
+package k.core.monitor.ui.sampling;
 
 /**
  * Created by yuchengluo on 2016/4/5.

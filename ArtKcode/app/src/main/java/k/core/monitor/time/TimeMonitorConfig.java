@@ -1,4 +1,4 @@
-package k.opt.monitor.time;
+package k.core.monitor.time;
 
 /**
  * Created by yuchengluo on 2016/3/25.
