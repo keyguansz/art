@@ -4,6 +4,7 @@ package k.art;
 import android.app.Application;
 import android.content.res.Configuration;
 
+import k.core.crash.CrashDemo;
 import k.core.util.KTextUtil;
 import k.core.util.kil.KImgLoader;
 
@@ -24,6 +25,7 @@ public class KApplication extends Application {
     public void onCreate() {
         super.onCreate();
         ins = this;
+        CrashDemo.asList();
         KImgLoader.getIns().init(this);
         KTextUtil.test();
        // KDimenUtil.main();
